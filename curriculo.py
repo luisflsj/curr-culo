@@ -7,7 +7,7 @@ st.divider()
 # =============== SIDEBAR =============== #
 with st.sidebar:
     st.image('eu.jpeg')
-    st.link_button("Linkedin", "www.linkedin.com/in/luis-fernando-saboia-369503115", use_container_width=True)
+    st.link_button("Linkedin", "https://www.linkedin.com/in/luis-fernando-saboia-369503115", use_container_width=True)
     st.text('📧 lfernandolsj@gmail.com')
     st.text('📞 +55 85 98809-7420')
 
