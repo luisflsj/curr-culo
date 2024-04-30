@@ -22,9 +22,12 @@ with tab1:
     I have worked on various challenging projects, leading multidisciplinary teams and collaborating with stakeholders to define requirements and deliver customized solutions. Additionally, I have experience in developing predictive models and machine learning algorithms, using languages such as Python and R, and implementing them in production environments. My key skills include:
 
     - Data Analysis and BI: Data transformation, cleaning, and structuring; creation of interactive dashboards and reports; interpretation and communication of results.
-    - Languages and Tools: Python, R, SQL, Tableau, Power BI, advanced Excel.
+    - Languages and Tools: Python, R, SQL, Tableau, Power BI, advanced Excel, Ab Initio;
+    - Meta tagging;
     - Statistical Modeling: Linear regression, time series analysis, clustering, decision trees, logistic regression models.
     - Machine Learning: Development of predictive models, classification algorithms, recommendation, and anomaly detection.
+
+    I usually do ETLs using the Python language, specifically the Pandas library, because if there's a pattern of consistency in the treatments, the program will execute with speed and efficiency until the variables change.
 
     I am always seeking continuous learning and stay updated with the latest trends and advancements in the field of data analysis. I am an effective communicator and possess interpersonal skills that enable me to work in teams and collaborate on complex projects.
     """
@@ -128,15 +131,27 @@ with tab2:
     skill_statistical = """
     - Statistical Data Analysis: 7 - 8 years
     """
+    skill_etl = """
+    - ETL: 9 - 10 years
+    """
+    skill_meta_taggin = """
+    - Meta tagging: 0 - 1 years
+    """
+    skill_ab_initio = """
+    - Ab Initio: 0 - 1 years
+    """
 
     with column1:
         st.info(skill_python)
         st.info(skill_pbi)
+        st.info(skill_etl)
     
     with column2:
         st.info(skill_storytelling)
         st.info(skill_sql)
+        st.info(skill_meta_taggin)
     
     with column3:
         st.info(skill_english)
         st.info(skill_statistical)
+        st.info(skill_ab_initio)
