@@ -11,7 +11,7 @@ with st.sidebar:
     st.text('📧 lfernandolsj@gmail.com')
     st.text('📞 +55 85 98809-7420')
 
-tab1, tab2 = st.tabs(['Resume', 'Skiils and Experiences'])
+tab1, tab2 = st.tabs(['Resume', 'Skills and Experiences'])
 
 with tab1:
 # =============== ABOUT ME =============== #
