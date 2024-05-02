@@ -22,7 +22,7 @@ with tab1:
     I have worked on various challenging projects, leading multidisciplinary teams and collaborating with stakeholders to define requirements and deliver customized solutions. Additionally, I have experience in developing predictive models and machine learning algorithms, using languages such as Python and R, and implementing them in production environments. My key skills include:
 
     - Data Analysis and BI: Data transformation, cleaning, and structuring; creation of interactive dashboards and reports; interpretation and communication of results.
-    - Languages and Tools: Python, R, SQL, Tableau, Power BI, advanced Excel, Ab Initio;
+    - Languages and Tools: Python, R, SQL, Tableau, Power BI, advanced Excel;
     - Meta tagging;
     - Statistical Modeling: Linear regression, time series analysis, clustering, decision trees, logistic regression models.
     - Machine Learning: Development of predictive models, classification algorithms, recommendation, and anomaly detection.
@@ -137,8 +137,8 @@ with tab2:
     skill_meta_taggin = """
     - Meta tagging: 0 - 1 years
     """
-    skill_ab_initio = """
-    - Ab Initio: 0 - 1 years
+    skill_postgre = """
+    - PostgreSQL: 1 - 2 years
     """
 
     with column1:
@@ -154,4 +154,4 @@ with tab2:
     with column3:
         st.info(skill_english)
         st.info(skill_statistical)
-        st.info(skill_ab_initio)
+        st.info(skill_postgre)
