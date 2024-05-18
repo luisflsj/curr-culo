@@ -1,5 +1,6 @@
 import streamlit as st
 
+# =============== PAGE CONFIG =============== #
 st.set_page_config(page_title="Eng. Luis Fernando Saboia", layout="wide")
 st.markdown("<h1 style='text-align: center;'>Eng. Luis Fernando Saboia</h1>", unsafe_allow_html=True)
 st.divider()
@@ -11,23 +12,21 @@ with st.sidebar:
     st.text('📧 lfernandolsj@gmail.com')
     st.text('📞 +55 85 98809-7420')
 
-tab1, tab2 = st.tabs(['Resume', 'Experiences and Skills'])
+tab1, tab2, tab3 = st.tabs(['Resume', 'Skiils and Experiences', 'Courses and Certificates'])
 
 with tab1:
 # =============== ABOUT ME =============== #
-    st.subheader('About me')
+    about_me = st.subheader('About me')
+    print(about_me)
     summary_text = """
     Throughout my career, I have developed expertise in structuring and analyzing complex data, statistical modeling, and creating interactive visualization dashboards. My results-oriented approach and advanced technical skills allow me to extract value from data by identifying patterns and trends that drive strategic decision-making.
 
     I have worked on various challenging projects, leading multidisciplinary teams and collaborating with stakeholders to define requirements and deliver customized solutions. Additionally, I have experience in developing predictive models and machine learning algorithms, using languages such as Python and R, and implementing them in production environments. My key skills include:
 
     - Data Analysis and BI: Data transformation, cleaning, and structuring; creation of interactive dashboards and reports; interpretation and communication of results.
-    - Languages and Tools: Python, R, SQL, Tableau, Power BI, advanced Excel;
-    - Meta tagging;
+    - Languages and Tools: Python, R, SQL, Tableau, Power BI, advanced Excel.
     - Statistical Modeling: Linear regression, time series analysis, clustering, decision trees, logistic regression models.
     - Machine Learning: Development of predictive models, classification algorithms, recommendation, and anomaly detection.
-
-    I usually do ETLs using the Python language, specifically the Pandas library, because if there's a pattern of consistency in the treatments, the program will execute with speed and efficiency until the variables change.
 
     I am always seeking continuous learning and stay updated with the latest trends and advancements in the field of data analysis. I am an effective communicator and possess interpersonal skills that enable me to work in teams and collaborate on complex projects.
     """
@@ -37,7 +36,8 @@ with tab1:
     st.divider()
 
     # =============== EDUCATION =============== #
-    st.subheader('Education')
+    education = st.subheader('Education')
+    print(education)
     education_text = """
     - Bachelor's degree in Metallurgical Engineering: Federal University of Ceará (UFC);
     - MBA in Project Management: Estácio de Sá University.
@@ -45,6 +45,8 @@ with tab1:
     st.info(education_text)
 
 with tab2:
+    experiences = st.subheader('Experiences')
+    print(experiences)
     # =============== EXPERIENCE =============== #
     def experiences(company, time, country, description):
         st.subheader(company)
@@ -110,7 +112,8 @@ with tab2:
     st.divider()
 
     # =============== SKILLS =============== #
-    st.subheader('Skiils')
+    skills = st.subheader('Skiils')
+    print(skills)
     column1, column2, column3 = st.columns(3)
     
     skill_python = """
@@ -131,27 +134,46 @@ with tab2:
     skill_statistical = """
     - Statistical Data Analysis: 7 - 8 years
     """
-    skill_etl = """
-    - ETL: 9 - 10 years
-    """
-    skill_meta_taggin = """
-    - Meta tagging: 0 - 1 years
-    """
-    skill_postgre = """
-    - PostgreSQL: 1 - 2 years
-    """
 
     with column1:
         st.info(skill_python)
         st.info(skill_pbi)
-        st.info(skill_etl)
     
     with column2:
         st.info(skill_storytelling)
         st.info(skill_sql)
-        st.info(skill_meta_taggin)
     
     with column3:
         st.info(skill_english)
         st.info(skill_statistical)
-        st.info(skill_postgre)
+    
+    with tab3:
+        column1, column2, column3, column4 = st.columns(4)
+
+        with column1:
+            st.image("a.jpeg")
+            st.image("e.jpeg")
+            st.image("i.jpeg")
+            st.image("m.jpeg")
+            st.image("q.jpeg")
+            st.image("u.jpeg")
+        with column2:
+            st.image("b.jpeg")
+            st.image("f.jpeg")
+            st.image("j.jpeg")
+            st.image("n.jpeg")
+            st.image("r.jpeg")
+            st.image("v.jpeg")
+        with column3:
+            st.image("c.jpeg")
+            st.image("g.jpeg")
+            st.image("k.jpeg")
+            st.image("o.jpeg")
+            st.image("s.jpeg")
+        with column4:
+            st.image("d.jpeg")
+            st.image("h.jpeg")
+            st.image("l.jpeg")
+            st.image("p.jpeg")
+            st.image("t.jpeg")
+        
